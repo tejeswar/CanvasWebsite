@@ -1,0 +1,54 @@
+
+#menuOnNav{
+    background:darkgrey;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+}
+#canvaLogo{
+width: 30%;
+
+}
+.mainMenuContainer ul{
+    /* to eliminate dots of ul items.*/
+    list-style: none;
+}
+.div li{
+   
+   
+}
+.mainMenu{
+   
+    background: cyan;
+   
+    border: 1px solid black;
+    display: flex;
+    height: 15vh;
+   
+    align-items: center;
+    
+}
+#mainMenuContainer1 li > a {
+    /*to remove underlines*/
+text-decoration: none;
+margin-top: 40%;
+
+}
+
+#mainMenuContainer1{
+border: 5px;
+padding-right: 10px;
+
+width: 70%;
+}
+#mainMenuContainer1 ul{
+    /*it will place home features...side by side*/
+    display: flex;
+    padding-right: 0px;
+}
+.imgTitle{
+    color: #999;
+}

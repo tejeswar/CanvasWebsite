@@ -1,0 +1,100 @@
+/*====================section 1 starts here=================================*/
+#section1{
+
+}
+.columnContainer{
+    display: flex;
+}
+#box-1{
+flex: 1;
+}
+#box-2{
+flex: 1;
+}
+#section1{
+    font-size: 1.25rem;
+    font-weight: 300;
+    background-color: yellowgreen;
+}
+/*=====================================================*/
+/*====================section 2 starts here=================================*/
+#section2{
+background-color: gray;
+}
+#section2ColumnContainer{
+    display: flex;
+}
+#box-3{
+    flex: 1;
+}
+#box-4{
+    flex: 1;
+}
+#box-5{
+    flex: 1;
+}
+#section2ColumnContainer img{
+    width: 256px;
+    height: 256px;
+}
+/*Footer section starts here*/
+footer{
+    
+    height: 600px;
+}
+.addressContainer{
+    height: 80%;
+    background: #556b2f;
+    display: flex;
+    position: relative;
+    
+}
+#addressContainerMain{
+    height: 80%;
+    width: 90%;
+    background: red;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    display: flex;
+}
+#blogroll ul{
+    /*why not working*/
+    list-style: none;
+    padding-left: 0%;
+}
+#blogroll{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.two-third-col{
+    
+    width: 150px;
+    background: rgb(86, 86, 126);
+    flex:2;
+    display: flex;
+    
+}
+.one-third-col{
+   
+    width: 150px;
+    flex:1;
+    background: yellowgreen;
+}
+
+.copyrightsContainer{
+    display: flex;
+    align-items: center;
+    border-top: 3px;
+    background: darkgrey;
+    height: 20%;
+    align-items: center;
+}
+#copyright{
+    flex:1;
+    padding-left: 50px;
+}
+#socialMedialinks{
+    flex:1;
+    padding-right: 50px;
+}
