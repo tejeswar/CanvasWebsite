@@ -2,3 +2,13 @@ body{
     margin: 0px;
    
 }
+p{
+    margin-left: 3px;
+}
+.two-third-col-content{
+    margin-left: 3px;
+}
+#backgroundImageId img{
+    width:100%; 
+    height:30%;
+}
