@@ -12,33 +12,40 @@
 width: 30%;
 
 }
+/*
 .mainMenuContainer ul{
-    /* to eliminate dots of ul items.*/
+    /* to eliminate dots of ul items.
     list-style: none;
 }
 .div li{
    
    
 }
+*/
 .mainMenu{
    
    /*  background: cyan;
    
-   border: 1px solid black;*/
-    display: flex;
-    height: 15vh;
+   border: 1px solid black;
+    display: flex;*/
+    height: 12vh;
    margin-left:15px; 
-    align-items: center;
+   /* align-items: center;*/
+   /*position and top has been added inorder to place the menus centrally inside its own div*/
+   position: relative;
+   top: 30%;
     
 }
-#mainMenuContainer1 li > a {
+#mainMenuContainer1 a {
     /*to remove underlines*/
 text-decoration: none;
 margin-top: 40%;
+width: 70%;
 
 }
 
 #mainMenuContainer1{
+    display: flex;
 border: 5px;
 padding-right: 10px;
 

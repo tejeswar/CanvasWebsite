@@ -1,15 +1,19 @@
 /*====================section 1 starts here=================================*/
-#section1{
 
-}
+
 .columnContainer{
     display: flex;
+    flex-direction: row;/*it is the default value*/
+    
 }
 #box-1{
 flex: 1;
+margin-right: 10px;
+margin-left: 2px;
 }
 #box-2{
 flex: 1;
+margin-right: 2px;
 }
 #section1{
     font-size: 1.25rem;
@@ -19,16 +23,26 @@ flex: 1;
 /*=====================================================*/
 /*====================section 2 starts here=================================*/
 #section2{
-background-color: gray;
+    background-color:wheat;
 }
 #section2ColumnContainer{
     display: flex;
+    background-color: gray;
+}
+.imageDiv{
+    display: flex;
+    justify-content: center;
+}
+.afterImage h4{
+text-align: center;
 }
 #box-3{
     flex: 1;
+    margin-right: 2px;
 }
 #box-4{
     flex: 1;
+    margin-right: 4px;
 }
 #box-5{
     flex: 1;
@@ -40,23 +54,30 @@ background-color: gray;
 /*Footer section starts here*/
 footer{
     
-    height: 600px;
+    height: 50%;
 }
+/*
 .addressContainer{
-    height: 80%;
+  
     background: #556b2f;
-    display: flex;
-    position: relative;
+    
+    
     
 }
+*/
 #addressContainerMain{
+    /*just removing bcoz facing some issue with making it responsive
     height: 80%;
     width: 90%;
-    background: red;
-    position: absolute;
+    */
+    background:white;
+    /*not required
+    position: relative;
     top:15px;
     left: 30px;
+    */
     display: flex;
+   
 }
 #blogroll ul{
     /*why not working*/
@@ -69,19 +90,41 @@ footer{
 }
 .two-third-col{
     
-    width: 150px;
+    width: 66%;
     background: rgb(86, 86, 126);
-    flex:2;
+    flex:1;
     display: flex;
+  
     
 }
 .one-third-col{
    
-    width: 150px;
+    width: 33%;
     flex:1;
     background: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
+#onethirdcolrow1{
+flex: 1;
+}
+#onethirdcolrow2{
+    flex: 1;
+}
+#onethirdcolrow3{
+    flex: 1;
+}
+.one-third-col-row-container{
+display: flex;
+}
+.onethirdcolrow1Image img{
+   /*provided thhis height and width in order to make all images of same size.otherwise it will of diff
+   size and take diff space*/ 
+    width: 80px;
+    height: 80px;
+}
+/*
 .copyrightsContainer{
     display: flex;
     align-items: center;
@@ -97,4 +140,47 @@ footer{
 #socialMedialinks{
     flex:1;
     padding-right: 50px;
+}*/
+.copyrightsContainer{
+    
+    background: darkgrey;
+    height: 20%;
 }
+#footer-social{
+padding-left: 35%;
+padding-right: 35%;
+}
+#footer-copyright{
+    padding-left: 25%;
+padding-right: 25%;
+padding-top: 1%;
+}
+
+@media(max-width: 630px) {
+    .columnContainer{
+         flex-direction: column;
+    }
+}
+@media(max-width: 630px) {
+    #section2ColumnContainer{
+         flex-direction: column;
+    }
+}
+@media(max-width: 630px) {
+    #addressContainerMain{
+         flex-direction: column;
+    }
+}
+@media(max-width: 630px) {
+    .two-third-col{
+         flex-direction: column;
+    }
+}
+@media(max-width: 630px) {
+    .one-third-col{
+         flex-direction: column;
+    }
+}
+
+
+
