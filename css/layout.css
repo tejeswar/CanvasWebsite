@@ -11,23 +11,31 @@ flex: 1;
 margin-right: 10px;
 margin-left: 2px;
 }
+
 #box-2{
 flex: 1;
-margin-right: 2px;
+/*i have placed these below two property in order to place the image at the center of box2.*/
+display: flex;
+justify-content: center;
 }
+
 #section1{
     font-size: 1.25rem;
     font-weight: 300;
     background-color: yellowgreen;
 }
+
 /*=====================================================*/
 /*====================section 2 starts here=================================*/
+
 #section2{
     background-color:wheat;
+    width: 100%;
 }
 #section2ColumnContainer{
     display: flex;
     background-color: gray;
+   
 }
 .imageDiv{
     display: flex;
@@ -46,6 +54,8 @@ text-align: center;
 }
 #box-5{
     flex: 1;
+    word-wrap: normal;
+   
 }
 #section2ColumnContainer img{
     width: 256px;
@@ -56,6 +66,7 @@ footer{
     
     height: 50%;
 }
+
 /*
 .addressContainer{
   
@@ -65,6 +76,7 @@ footer{
     
 }
 */
+
 #addressContainerMain{
     /*just removing bcoz facing some issue with making it responsive
     height: 80%;
@@ -124,6 +136,7 @@ display: flex;
     width: 80px;
     height: 80px;
 }
+
 /*
 .copyrightsContainer{
     display: flex;
@@ -174,13 +187,30 @@ padding-top: 1%;
 @media(max-width: 630px) {
     .two-third-col{
          flex-direction: column;
+          /*in order to fit this col with the window size itself.without it text is coming properly within 
+          this column.but col itself is not fitting to the whole device size */
+          width: 100%;
     }
 }
 @media(max-width: 630px) {
     .one-third-col{
          flex-direction: column;
+         /*in order to fit the text within the each row*/
+         width: 100%;
     }
 }
+@media(max-width: 630px) {
+           body{
+           max-width: 100%;
+       }
+
+}
+
+
+
+
+   
+    
 
 
 
