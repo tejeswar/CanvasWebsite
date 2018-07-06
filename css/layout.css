@@ -154,6 +154,9 @@ display: flex;
     flex:1;
     padding-right: 50px;
 }*/
+#footer{
+    height: 40%;
+}
 .copyrightsContainer{
     
     background: darkgrey;
@@ -162,6 +165,12 @@ display: flex;
 #footer-social{
 padding-left: 35%;
 padding-right: 35%;
+}
+#footer-social a{
+    font-size: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 #footer-copyright{
     padding-left: 25%;
